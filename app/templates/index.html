@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient — Diabetes Risk</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Patient Portal — Diabetes Risk Predictor</h1>
+    <form id="predict-form">
+      <div class="grid">
+        <label>Pregnancies <input type="number" step="1" name="Pregnancies" required></label>
+        <label>Glucose <input type="number" step="1" name="Glucose" required></label>
+        <label>BloodPressure <input type="number" step="1" name="BloodPressure" required></label>
+        <label>SkinThickness <input type="number" step="1" name="SkinThickness" required></label>
+        <label>Insulin <input type="number" step="1" name="Insulin" required></label>
+        <label>BMI <input type="number" step="0.1" name="BMI" required></label>
+        <label>DiabetesPedigreeFunction <input type="number" step="0.001" name="DiabetesPedigreeFunction" required></label>
+        <label>Age <input type="number" step="1" name="Age" required></label>
+      </div>
+      <button type="submit">Predict Risk</button>
+    </form>
+
+    <div id="result" class="card hidden"></div>
+
+    <h2>Get Diet Plan</h2>
+    <form id="diet-form">
+      <label>Last known glucose <input type="number" step="0.1" name="glucose" required></label>
+      <label>BMI <input type="number" step="0.1" name="bmi" required></label>
+      <label>Vegetarian?
+        <select name="veg">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </label>
+      <button type="submit">Recommend Diet</button>
+    </form>
+
+    <div id="diet" class="card hidden"></div>
+    <p><a href="/dashboard">Go to Provider Dashboard →</a></p>
+  </div>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

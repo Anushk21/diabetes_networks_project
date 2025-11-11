@@ -1,0 +1,10 @@
+# Placeholder cloud networking config (for viva/demo)
+provider: "demo-local"
+network:
+  vpc: "vpc-demo"
+  subnets:
+    - "subnet-public-1"
+    - "subnet-private-1"
+security:
+  use_https: true
+  allow_origins: ["http://127.0.0.1:5000"]

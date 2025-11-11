@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Layer — Stored Predictions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: "Segoe UI", sans-serif;
+            margin: 40px;
+        }
+        h2 {
+            color: #8fd1ff;
+        }
+        table.data {
+            border-collapse: collapse;
+            width: 100%;
+            background: #101018;
+            color: white;
+        }
+        table.data th, table.data td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: center;
+        }
+        table.data th {
+            background: #1a1a2e;
+            color: #79c9ff;
+        }
+        .btn {
+            background-color: #1f6feb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📚 Data Layer — Stored Predictions</h2>
+        <p>This section represents the <b>Data Layer</b> of the network, showing stored patient prediction records.</p>
+
+        {% if tables %}
+            {% for table in tables %}
+                {{ table | safe }}
+            {% endfor %}
+        {% else %}
+            <p>{{ message }}</p>
+        {% endif %}
+
+        <a href="/dashboard" class="btn">← Back to Dashboard</a>
+    </div>
+</body>
+</html>

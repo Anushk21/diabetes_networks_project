@@ -1,0 +1,37 @@
+{
+  "glucose_thresholds": {
+    "normal": 99,
+    "prediabetes": 125
+  },
+  "plans": {
+    "normal": {
+      "title": "Balanced Maintenance Plan",
+      "tips": [
+        "Focus on whole grains, vegetables, and lean proteins",
+        "Regular meals; avoid excessive refined sugars",
+        "30\u201345 min moderate activity most days"
+      ]
+    },
+    "prediabetes": {
+      "title": "Moderate Carb Plan",
+      "tips": [
+        "Target 45\u201355% carbs, prioritize fiber-rich foods",
+        "Distribute carbs across meals; avoid sugary beverages",
+        "Add 30\u201360 min daily activity"
+      ]
+    },
+    "diabetes": {
+      "title": "Low-Glycemic Plan",
+      "tips": [
+        "Limit refined carbs; emphasize legumes, non-starchy veg",
+        "Pair carbs with protein/fat; watch portion sizes",
+        "Monitor glucose response and meal timing"
+      ]
+    }
+  },
+  "veg_substitutions": [
+    "Use paneer/tofu instead of meat",
+    "Add dals/beans and mixed sprouts for protein",
+    "Use olive/groundnut oil in moderation"
+  ]
+}
